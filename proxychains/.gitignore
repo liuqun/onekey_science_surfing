@@ -1,0 +1,14 @@
+*.o
+*.so
+*.la
+*.lo
+.deps/
+.libs/
+.*
+
+# Autoconf stuff 
+libtool
+config.*
+stamp-h
+proxychains4
+*.dylib
