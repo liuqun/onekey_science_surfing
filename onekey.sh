@@ -5,13 +5,10 @@ proxy=proxychains4
 
 function ss_install()
 {
-	ss_pkg=shadowsocks-2.8.2.tar.gz
 	if [ "X`which ${ss} 2>/dev/null`" = "X" ]; then
-		tar zxvf ${ss_pkg}
-		cd shadowsocks-2.8.2
+		pushd shadowsocks
 		python setup.py install
-		cd ../
-		rm -rf shadowsocks-2.8.2
+		popd
 	fi
 }
 
